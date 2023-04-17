@@ -1,0 +1,7 @@
+<h1>All Stages</h1>
+<%= render 'Share/navbar' %>
+<ul>
+  <% @stages.each do |stage| %>
+    <li><%= link_to stage.title, stage_path(stage) %></li>
+  <% end %>
+</ul>
